@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2ltkxivmn2vn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x7udj"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.4842254, 0.26094922, 0.8717775, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="MenuPrincipal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 64.0
+offset_right = 3.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titre" type="Label" parent="."]
+layout_mode = 0
+offset_left = -77.0
+offset_top = -92.0
+offset_right = 316.0
+offset_bottom = -25.0
+theme_override_font_sizes/font_size = 48
+text = "Shoot The Target"
+
+[node name="button conteneur" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Play button" type="Button" parent="button conteneur"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_x7udj")
+text = "PLAY"
+
+[node name="Quit button" type="Button" parent="button conteneur"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_x7udj")
+text = "QUIT"
