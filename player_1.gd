@@ -4,9 +4,9 @@ extends CharacterBody3D
 
 @export var jump_velocity:=70
 
-#@export var speed:float
+@export var speed:float
 
-#@export var sensibilite:float
+@export var sensibilite:float
 
 var direction = Vector3.ZERO
 # Called when the node enters the scene tree for the first time.
